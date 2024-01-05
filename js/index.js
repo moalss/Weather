@@ -83,7 +83,7 @@ let clockItems=document.querySelectorAll(".clockCont h2");
 let currentDate = new Date();
 
 const api =
-  "http://api.weatherapi.com/v1/forecast.json?key=c85f8ccd51044faeba9131623233112";
+  "https://api.weatherapi.com/v1/forecast.json?key=c85f8ccd51044faeba9131623233112";
 
   
   getCurrentTime();
@@ -109,6 +109,7 @@ const api =
       " " +
       currentDate.getFullYear();
       date2Span.innerHTML=days[currentDate.getDay()+1];
+      console.log(currentDate.getDay()+2);
       date3Span.innerHTML=days[currentDate.getDay()+2];
 }
 
