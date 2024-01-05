@@ -108,9 +108,10 @@ const api =
       months[currentDate.getMonth()] +
       " " +
       currentDate.getFullYear();
-      date2Span.innerHTML=days[currentDate.getDay()+1];
-      console.log(currentDate.getDay()+2);
-      date3Span.innerHTML=days[currentDate.getDay()+2];
+      date2Span.innerHTML=days[currentDate.getDay()+1>=7 ? 0 : currentDate.getDay()+1];
+      
+    
+      date3Span.innerHTML=days[currentDate.getDay()+2 >=7 ? 0 : currentDate.getDay()+2];
 }
 
 
